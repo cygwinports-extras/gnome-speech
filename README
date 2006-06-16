@@ -1,0 +1,101 @@
+gnome-speech
+-------------------------------------------
+This is GNOME Speech.  It's purpose is to provide a
+simple general API for producing text-to-speech output.
+
+The Festival driver has no build-time dependencies, and will be built
+regardless of whether Festival is actually installed on your system.
+The driver has been tested with Festival Version 1.4.2.  The only
+requirement is that the festival binary be in the user's path.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  ORBit2-2.14.0-1
+  libbonobo2-2.14.0-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  intltool-0.34.2-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://developer.gnome.org/projects/gap/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gnome-speech/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-speech-0.4.0-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-speech-0.4.0-1.cygport all
+
+This will create:
+  /usr/src/gnome-speech-0.4.0-1-src.tar.bz2
+  /usr/src/gnome-speech-0.4.0-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cyggnomespeech-7.dll
+  /usr/bin/festival-synthesis-driver.exe
+  /usr/bin/test-speech.exe
+  /usr/include/gnome-speech-1.0/gnome-speech/GNOME_Speech.h
+  /usr/include/gnome-speech-1.0/gnome-speech/gnome-speech.h
+  /usr/include/gnome-speech-1.0/gnome-speech/speaker.h
+  /usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Festival.server
+  /usr/lib/libgnomespeech.dll.a
+  /usr/lib/libgnomespeech.la
+  /usr/lib/orbit-2.0/GNOME_Speech_module.dll
+  /usr/lib/orbit-2.0/GNOME_Speech_module.la
+  /usr/lib/pkgconfig/gnome-speech-1.0.pc
+  /usr/share/doc/Cygwin/gnome-speech-0.4.0.README
+  /usr/share/doc/gnome-speech-0.4.0/AUTHORS
+  /usr/share/doc/gnome-speech-0.4.0/COPYING
+  /usr/share/doc/gnome-speech-0.4.0/ChangeLog
+  /usr/share/doc/gnome-speech-0.4.0/INSTALL
+  /usr/share/doc/gnome-speech-0.4.0/NEWS
+  /usr/share/doc/gnome-speech-0.4.0/README
+  /usr/share/idl/gnome-speech-1.0/GNOME_Speech.idl
+  /usr/share/idl/gnome-speech-1.0/GNOME_Speech_Speaker.idl
+  /usr/share/idl/gnome-speech-1.0/GNOME_Speech_SpeechCallback.idl
+  /usr/share/idl/gnome-speech-1.0/GNOME_Speech_SynthesisDriver.idl
+
+------------------
+
+Port Notes:
+
+----- version 0.4.0-1 -----
+Version bump.
+
+----- version 0.3.9-1 -----
+Version bump.
+Cygwin patches accepted upstream; now builds OOTB.
+
+----- version 0.3.8-1 -----
+Version bump.
+
+----- version 0.3.7-1 -----
+Version bump.
+Includes fixes from CVS for the festival driver.
+
+----- version 0.3.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
