@@ -9,10 +9,11 @@ The driver has been tested with Festival Version 1.4.2.  The only
 requirement is that the festival binary be in the user's path.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  ORBit2-2.14.10-1
-  glib2-2.14.4-1
-  libbonobo2-2.20.1-1
+  cygwin-1.5.25-11
+  ORBit2-2.14.12-1
+  glib2-2.16.3-1
+  libbonobo2-2.22.0-1
+  libespeak1-1.37-1
 
 Build requirements:
 (besides corresponding devel packages)
@@ -38,16 +39,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-speech-0.4.16-1-src.tar.bz2
+  unpack gnome-speech-0.4.19-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-speech-0.4.16-1.cygport all
+  cygport ./gnome-speech-0.4.19-1.cygport all
 
 This will create:
-  /usr/src/gnome-speech-0.4.16-1-src.tar.bz2
-  /usr/src/gnome-speech-0.4.16-1.tar.bz2
-  /usr/src/gnome-speech-devel-0.4.16-1.tar.bz2
+  /usr/src/gnome-speech-0.4.19-1-src.tar.bz2
+  /usr/src/gnome-speech-0.4.19-1.tar.bz2
+  /usr/src/gnome-speech-devel-0.4.19-1.tar.bz2
 
 -------------------------------------------
 
@@ -55,18 +56,19 @@ Files included in the binary packages:
 
 (gnome-speech)
   /usr/bin/cyggnomespeech-7.dll
+  /usr/bin/espeak-synthesis-driver.exe
   /usr/bin/festival-synthesis-driver.exe
   /usr/bin/test-speech.exe
+  /usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Espeak.server
   /usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Festival.server
   /usr/lib/orbit-2.0/GNOME_Speech_module.dll
   /usr/lib/orbit-2.0/GNOME_Speech_module.la
-  /usr/share/doc/Cygwin/gnome-speech-0.4.16.README
-  /usr/share/doc/gnome-speech-0.4.16/AUTHORS
-  /usr/share/doc/gnome-speech-0.4.16/COPYING
-  /usr/share/doc/gnome-speech-0.4.16/ChangeLog
-  /usr/share/doc/gnome-speech-0.4.16/INSTALL
-  /usr/share/doc/gnome-speech-0.4.16/NEWS
-  /usr/share/doc/gnome-speech-0.4.16/README
+  /usr/share/doc/gnome-speech-0.4.19/AUTHORS
+  /usr/share/doc/gnome-speech-0.4.19/COPYING
+  /usr/share/doc/gnome-speech-0.4.19/ChangeLog
+  /usr/share/doc/gnome-speech-0.4.19/INSTALL
+  /usr/share/doc/gnome-speech-0.4.19/NEWS
+  /usr/share/doc/gnome-speech-0.4.19/README
 
 (gnome-speech-devel)
   /usr/include/gnome-speech-1.0/gnome-speech/GNOME_Speech.h
@@ -83,6 +85,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.4.19-1 -----
+Version bump for GNOME 2.22.  Added espeak driver.
 
 ----- version 0.4.16-1 -----
 Version bump for GNOME 2.20.
