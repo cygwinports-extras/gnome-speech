@@ -1,0 +1,12 @@
+--- origsrc/gnome-speech-0.4.22/drivers/espeak/Makefile.am	2008-11-05 19:58:22.000000000 -0600
++++ src/gnome-speech-0.4.22/drivers/espeak/Makefile.am	2008-12-14 18:33:25.556375000 -0600
+@@ -14,8 +14,7 @@
+ 
+ LDADD = $(top_builddir)/gnome-speech/libgnomespeech.la 	\
+ 	$(gnome_speech_LIBS)	\
+-	-L$(espeak_LIBDIR)	\
+-	-lespeak
++	$(espeak_LIBS)
+ 
+ espeak_synthesis_driver_SOURCES = \
+ 	espeaksynthesisdriver.c \

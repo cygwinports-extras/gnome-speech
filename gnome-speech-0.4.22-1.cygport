@@ -1,0 +1,13 @@
+inherit gnome2
+
+DESCRIPTION="GNOME text-to-speech library"
+HOMEPAGE="http://developer.gnome.org/projects/gap/"
+
+PATCH_URI="0.4.22-espeak_LIBS.patch"
+
+PKG_NAMES="${PN} libgnomespeech7 libgnomespeech-devel"
+gnome_speech_CONTENTS='usr/bin/*.exe usr/lib/bonobo/ usr/lib/orbit-2.0/ usr/share/doc/'
+libgnomespeech7_CONTENTS="usr/bin/*-7.dll"
+libgnomespeech_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/idl/'
+
+DIFF_EXCLUDES="*.server"
