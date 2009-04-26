@@ -9,25 +9,26 @@ The driver has been tested with Festival Version 1.4.2.  The only
 requirement is that the festival binary be in the user's path.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbonobo2_0-2.24.0-1
-  libglib2.0_0-2.18.3-1
-  libespeak1-1.39-1
-  libORBit2_0-2.14.16-1
+  cygwin-1.7.0-45
+  libbonobo2_0-2.24.1-1
+  libespeak1-1.40.02-1
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libORBit2_0-2.14.17-1
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -39,23 +40,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-speech-0.4.22-1-src.tar.bz2
+  unpack gnome-speech-0.4.25-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-speech-0.4.22-1.cygport all
+  cygport ./gnome-speech-0.4.25-1.cygport all
 
 This will create:
-  /usr/src/gnome-speech-0.4.22-1-src.tar.bz2
-  /usr/src/gnome-speech-0.4.22-1.tar.bz2
-  /usr/src/libgnomespeech-devel-0.4.22-1.tar.bz2
-  /usr/src/libgnomespeech7-0.4.22-1.tar.bz2
+  /usr/src/gnome-speech-0.4.25-1-src.tar.bz2
+  /usr/src/gnome-speech-0.4.25-1.tar.bz2
+  /usr/src/libgnomespeech-devel-0.4.25-1.tar.bz2
+  /usr/src/libgnomespeech7-0.4.25-1.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (gnome-speech)
+  /usr/bin/cyggnomespeech-7.dll
   /usr/bin/espeak-synthesis-driver.exe
   /usr/bin/festival-synthesis-driver.exe
   /usr/bin/test-speech.exe
@@ -63,12 +65,11 @@ Files included in the binary packages:
   /usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Festival.server
   /usr/lib/orbit-2.0/GNOME_Speech_module.dll
   /usr/lib/orbit-2.0/GNOME_Speech_module.la
-  /usr/share/doc/gnome-speech-0.4.22/AUTHORS
-  /usr/share/doc/gnome-speech-0.4.22/COPYING
-  /usr/share/doc/gnome-speech-0.4.22/ChangeLog
-  /usr/share/doc/gnome-speech-0.4.22/INSTALL
-  /usr/share/doc/gnome-speech-0.4.22/NEWS
-  /usr/share/doc/gnome-speech-0.4.22/README
+  /usr/share/doc/gnome-speech/AUTHORS
+  /usr/share/doc/gnome-speech/COPYING
+  /usr/share/doc/gnome-speech/ChangeLog
+  /usr/share/doc/gnome-speech/NEWS
+  /usr/share/doc/gnome-speech/README
 
 (libgnomespeech7)
   /usr/bin/cyggnomespeech-7.dll
@@ -89,40 +90,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.4.22-1 -----
-Version bump for GNOME 2.24.
-
------ version 0.4.21-1 -----
-Version bump.
-
------ version 0.4.20-1 -----
-Version bump.
-
------ version 0.4.19-1 -----
-Version bump for GNOME 2.22.  Added espeak driver.
-
------ version 0.4.16-1 -----
-Version bump for GNOME 2.20.
-
------ version 0.4.12-1 -----
-Version bump for GNOME 2.18.
-
------ version 0.4.0-1 -----
-Version bump.
-
------ version 0.3.9-1 -----
-Version bump.
-Cygwin patches accepted upstream; now builds OOTB.
-
------ version 0.3.8-1 -----
-Version bump.
-
------ version 0.3.7-1 -----
-Version bump.
-Includes fixes from CVS for the festival driver.
-
------ version 0.3.5-1 -----
-Initial release for Cygwin.
+----- version 0.4.25-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
