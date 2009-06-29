@@ -1,5 +1,5 @@
 category: Gnome Accessibility
-requires: cygwin libgnomespeech7 libbonobo2-devel libglib2.0-devel libORBit2-devel
+requires: libgnomespeech7 libbonobo2-devel libglib2.0-devel libORBit2-devel
 external-source: gnome-speech
 sdesc: "GNOME text-to-speech library (development)"
 ldesc: "This is GNOME Speech.  It's purpose is to provide a
